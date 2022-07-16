@@ -4,6 +4,8 @@ import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
+import { links } from '../data/dummy';
+
 const Sidebar = () => {
   const activeMenu = true;
 
@@ -13,9 +15,12 @@ const Sidebar = () => {
         <>
           <div className='flex justify-between items-center'>
             <Link to="/" onClick={() => {}}
-            className="items-center">
+            className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
               <SiShopware /> <span>Shoppy</span>
             </Link>
+            {/* <TooltipComponent content={}>
+
+            </TooltipComponent> */}
           </div>
         </>
       )}
